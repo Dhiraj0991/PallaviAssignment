@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">7</td><td class="num">100,704</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testcases.Module9_1</td><td><a href="#m0">closeBrowser</a></td><td rowspan="1">1582652293128</td><td rowspan="1">3057</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">testcases.Module9_1</td><td><a href="#m1">negativeScenariosTest</a></td><td rowspan="7">1582652286204</td><td rowspan="7">285</td></tr><tr class="failedeven"><td><a href="#m2">negativeScenariosTest</a></td></tr><tr class="failedeven"><td><a href="#m3">negativeScenariosTest</a></td></tr><tr class="failedeven"><td><a href="#m4">negativeScenariosTest</a></td></tr><tr class="failedeven"><td><a href="#m5">negativeScenariosTest</a></td></tr><tr class="failedeven"><td><a href="#m6">negativeScenariosTest</a></td></tr><tr class="failedeven"><td><a href="#m7">negativeScenariosTest</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testcases.Module9_1</td><td><a href="#m8">negativeScenariosTest</a></td><td rowspan="4">1582652246761</td><td rowspan="4">1952</td></tr><tr class="passedeven"><td><a href="#m9">negativeScenariosTest</a></td></tr><tr class="passedeven"><td><a href="#m10">negativeScenariosTest</a></td></tr><tr class="passedeven"><td><a href="#m11">negativeScenariosTest</a></td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">testcases.Module9_1#closeBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: F:\JAVA\Selenium\EclipsePhotonProjects\PallaviAssignment\Reports\TestReport.html (The system cannot find the file specified)
+	at functions.SendTestReportInEmail.send(SendTestReportInEmail.java:87)
+	at testcases.Module9_1.closeBrowser(Module9_1.java:103)
+Caused by: javax.mail.MessagingException: IOException while sending message;
+  nested exception is:
+	java.io.FileNotFoundException: F:\JAVA\Selenium\EclipsePhotonProjects\PallaviAssignment\Reports\TestReport.html (The system cannot find the file specified)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1167)
+	at javax.mail.Transport.send0(Transport.java:255)
+	at javax.mail.Transport.send(Transport.java:124)
+	at functions.SendTestReportInEmail.send(SendTestReportInEmail.java:81)
+	... 25 more
+Caused by: java.io.FileNotFoundException: F:\JAVA\Selenium\EclipsePhotonProjects\PallaviAssignment\Reports\TestReport.html (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.&lt;init&gt;(FileInputStream.java:138)
+	at javax.activation.FileDataSource.getInputStream(FileDataSource.java:97)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:305)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1652)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:961)
+	at javax.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:553)
+	at com.sun.mail.handlers.multipart_mixed.writeTo(multipart_mixed.java:103)
+	at javax.activation.ObjectDataContentHandler.writeTo(DataHandler.java:889)
+	at javax.activation.DataHandler.writeTo(DataHandler.java:317)
+	at javax.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:1652)
+	at javax.mail.internet.MimeMessage.writeTo(MimeMessage.java:1850)
+	at com.sun.mail.smtp.SMTPTransport.sendMessage(SMTPTransport.java:1119)
+	... 28 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate the error message 5</td><td>GETTEXTVALIDATION</td><td>(//div[@class=&apos;_5633 _5634 _53ij&apos;])[4]</td><td>xpath</td><td>Please choose a gender. You can change who can see this later.</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DHIRAJ-LAPTOP&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at functions.UIOperation.perform(UIOperation.java:144)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Click on SignUp Button</td><td>CLICK</td><td>NA</td><td>xpath</td><td>(//button[text()=&apos;Sign Up&apos;])[1]</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at functions.UIOperation.perform(UIOperation.java:110)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate the error message 3</td><td>GETTEXTVALIDATION</td><td>(//div[@class=&apos;_5633 _5634 _53ij&apos;])[2]</td><td>xpath</td><td>You&apos;ll use this when you log in and if you ever need to reset your password.</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DHIRAJ-LAPTOP&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at functions.UIOperation.perform(UIOperation.java:144)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Click on Login Button</td><td>CLICK</td><td>NA</td><td>css</td><td>input[id^=&apos;u_0&apos;][value=&apos;Log In&apos;]</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at functions.UIOperation.perform(UIOperation.java:117)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate the error message 4</td><td>GETTEXTVALIDATION</td><td>(//div[@class=&apos;_5633 _5634 _53ij&apos;])[3]</td><td>xpath</td><td>Enter a combination of at least six numbers, letters and punctuation marks (such as ! and &amp;).</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DHIRAJ-LAPTOP&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at functions.UIOperation.perform(UIOperation.java:144)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Check the error message 2</td><td>CLICK</td><td>NA</td><td>xpath</td><td>//input[@aria-label=&apos;First name&apos;]</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at functions.UIOperation.perform(UIOperation.java:110)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate the error message 2</td><td>GETTEXTVALIDATION</td><td>(//div[@class=&apos;_5633 _5634 _53ij&apos;])[1]</td><td>xpath</td><td>What&apos;s your name?</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DHIRAJ-LAPTOP&apos;, ip: &apos;192.168.0.8&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:48)
+	at functions.UIOperation.perform(UIOperation.java:144)
+	at testcases.Module9_1.negativeScenariosTest(Module9_1.java:49)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Check the error message 3</td><td>CLICK</td><td>NA</td><td>xpath</td><td>//input[@aria-label=&apos;Mobile number or email address&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Navigate back to Facebook page</td><td>NAVIGATEBACK</td><td>NA</td><td>NA</td><td>NA</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Check the error message 4</td><td>CLICK</td><td>NA</td><td>xpath</td><td>//input[@aria-label=&apos;New password&apos;]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testcases.Module9_1#negativeScenariosTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Check the error message 5</td><td>CLICK</td><td>NA</td><td>xpath</td><td>(//i)[18]</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
