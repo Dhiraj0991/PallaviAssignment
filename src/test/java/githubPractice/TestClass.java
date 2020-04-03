@@ -8,6 +8,17 @@ public class TestClass
 	@Test
 	public void name()
 	{
-		System.out.println("Hello");
+		
+		String str="Y";
+		
+		if (str.contentEquals("Y"))
+		{
+			System.out.println("Hello");
+		}
+		
+		else {
+			System.out.println("Bye");
+		}
+		
 	}
 }
